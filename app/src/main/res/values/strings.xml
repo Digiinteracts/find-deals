@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">FinalDeal</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="facebook_app_id">1827794414170980</string>
+
+    <string name="DealsNearby">Deals Nearby</string>
+
+    <string name="Username">User Name</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="ForgotPassword">Forgot Password</string>
+    <string name="LoginwithFacebook">Login with Facebook</string>
+    <string name="Loginwithgoogle">Login with google+</string>
+    <string name="OR">OR</string>
+    <string name="SignUp">SignUp</string>
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="user"> User</string>
+    <string name="shopowner"> Register new shop</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="YourLocation">YourLocation</string>
+    <string name="Deals">Deals</string>
+    <string name="PopularDeals">Popular Deals</string>
+    <string name="PopulatStores">Popular Stores</string>
+    <string name="CompanyName">Company Name</string>
+    <string name="Address">Address</string>
+    <string name="ZipCode">Zip Code</string>
+    <string name="City">City</string>
+    <string name="ORGNumber">ORG Number</string>
+    <string name="CompanyDistrict">Country District</string>
+
+    <string name="nearby">NearBy</string>
+    <string name="Home">Home</string>
+    <string name="Discover">Discover</string>
+    <string name="Categories">Categories</string>
+    <string name="More">More</string>
+
+    <string name="FavoriteStores">Favorite Stores</string>
+    <string name="myprofile">My Profile</string>
+    <string name="FavoriteCategories">Favorite Categories</string>
+
+    <string name="back">Back</string>
+    <string name="DealsEnds">Deals Ends</string>
+    <string name="Likes">Likes</string>
+    <string name="Viewed">Viewed</string>
+    <string name="Reviews">Reviews</string>
+    <string name="Share">Share</string>
+    <string name="Details">Details</string>
+    <string name="Locations">Locations</string>
+    <string name="WriteReviews">Write Reviews</string>
+    <string name="Call">Call</string>
+    <string name="Follow">Follow</string>
+    <string name="FolloWers">FolloWers</string>
+    <string name="KMAway">Km Away</string>
+    <string name="ADDRESS">ADDRESS</string>
+    <string name="StoreTime">Store Time</string>
+    <string name="Gallery">Gallery</string>
+    <string name="ActiveDeals">Active Deals</string>
+    <string name="VIEWALL">VIEW ALL</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="DealsLiked">Deals Liked</string>
+    <string name="StoresFollowed">Stores Followed</string>
+    <string name="FavouriteCategories">Favourite Categories</string>
+    <string name="WRITEREVIEWS">WRITE REVIEWS</string>
+
+    <string name="Ratings">Ratings</string>
+    <string name="Submit">Submit</string>
+    <string name="Save">Save</string>
+    <string name="Register">Register</string>
+    <string name="guest">Guest</string>
+    <string name="categories">Categories</string>
+    <string name="spinner_title">Select</string>
+    <string name="Language">Language</string>
+    <string name="AboutFindDeals">About Find Deals</string>
+    <string name="RateFindDealsonAppStore">Rate Find Deals on App Store</string>
+    <string name="ManageNotification">Manage Notification</string>
+    <string name="InviteFriends">Invite Friends</string>
+    <string name="TermsPrivacyPolicy">Terms Privacy Policy</string>
+    <string name="FollowUs">Follow Us</string>
+    <string name="GiveUsFeedback">Give Us Feedback</string>
+    <string name="FAQ">FAQ</string>
+    <string name="Logout">Logout</string>
+    <string name="Settings">Settings</string>
+    <string name="reviewlist">Review List</string>
+    <string name="DealsList">Deals List</string>
+    <string name="SelectCountry">Select Country</string>
+    <string name="stores">Stores</string>
+</resources>

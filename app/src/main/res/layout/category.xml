@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/categorytitle"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/Categories"/>
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+          >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/srch"
+                android:layout_gravity="center"
+                android:id="@+id/imageView4" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:numColumns="2"
+        android:gravity="center"
+        android:columnWidth="50dp"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+   <!-- <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:layout_height="wrap_content"/>
+-->
+</LinearLayout>

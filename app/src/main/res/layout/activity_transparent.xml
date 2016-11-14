@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digit_25.finaldeal.TransparentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:id="@+id/centerBgImg"
+        android:layout_centerInParent="true"
+        android:background="@drawable/trans_layer"
+        android:layout_height="140dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/likelayout"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

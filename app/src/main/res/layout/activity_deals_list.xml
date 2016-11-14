@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.digit_25.finaldeal.DealsList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="@dimen/back_icn_width"
+                android:layout_height="@dimen/back_icn_height"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/back_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:id="@+id/backicn" />
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yourlocation"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/back"/>
+
+        </LinearLayout>
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/store"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/DealsList"/>
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:layout_height="match_parent"/>
+</LinearLayout>

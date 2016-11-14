@@ -1,0 +1,92 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <!-- <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/appbarlayout"
+            />-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/appbarlayout"
+        android:id="@+id/customFragment" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbarlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_gravity="end|bottom">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:tabMode="fixed"
+            android:layout_gravity="end|bottom"
+            style="@style/MyCustomTabLayout"
+            android:background="@color/white"
+            android:padding="-16dp"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+<!--
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/fab"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/center_btn"
+            android:layout_alignParentBottom="true"
+            app:layout_anchorGravity="bottom|right|end"
+            app:borderWidth="-10dp"
+            android:layout_height="wrap_content" />-->
+
+     <!--   <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/tab_layout"
+            android:id="@+id/tablayout"
+            android:layout_alignParentBottom="true"/>-->
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <utils.floatingActionMenu.AddFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="Add Group"
+            android:id="@+id/addfabButton"
+            fab:fab_stroke_visible="true"
+            android:elevation="0dp"
+            android:visibility="visible"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/plusicn"
+            fab:fab_colorPressed="@color/white"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

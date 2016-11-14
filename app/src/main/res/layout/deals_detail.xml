@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="@dimen/back_icn_width"
+                android:layout_height="@dimen/back_icn_height"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/back_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:id="@+id/backicn" />
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yourlocation"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/back"/>
+
+        </LinearLayout>
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/categorytitle"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/nearby"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/srch"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/deals_details_img_height"
+            android:id="@+id/imglayout">
+            <!--<ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/deals_details_img_height"
+                android:scaleType="fitXY"
+                android:background="@drawable/deal_detais_bg"
+                android:layout_alignParentTop="true"
+                />
+            <ImageView
+                android:id="@+id/iv_background1"
+                android:layout_width="match_parent"
+                android:src="@drawable/trans_layer"
+                android:alpha="0.6"
+                android:layout_height="@dimen/deals_details_img_height"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                />-->
+
+            <ImageView
+                android:id="@+id/iv_background1"
+                android:layout_width="match_parent"
+                android:src="@drawable/trans_layer"
+                android:alpha="0.6"
+                android:layout_height="@dimen/deals_details_img_height"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                />
+
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/deals_details_img_height"
+            android:layout_weight="1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout2"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <utils.Boldtext
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_outlet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D Mall"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#c4171d"/>
+                </LinearLayout>
+                <utils.RegularText
+                    android:id="@+id/tv_putlet_adress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Osl, Norway"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_marginTop="@dimen/deals_details_margin_top"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/deals_details_like_textsize"
+                    android:text="$8.00"
+                    android:id="@+id/dealsprice"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/light_green"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="0.5dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"/>
+                    </RelativeLayout>
+
+                    <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/deals_details_like_textsize"
+                    android:layout_gravity="center"
+                    android:text="500"
+                        android:id="@+id/discounted_price"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/light_green"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_below="@+id/linearLayout2"
+                android:padding="10dip"
+                app:centered="true"
+                android:layout_marginTop="5dp"
+                app:fillColor="#FFFFFF"
+                app:pageColor="#FF0000"
+                app:snap="false" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/deals_details_deals_height"
+                android:paddingBottom="1dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/dealsdetaisimg"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/deals_details_deals_height"
+                    android:layout_weight=".20"
+                    android:gravity="bottom"
+                    android:id="@+id/call_btn_layout"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_outlet_call"
+                        android:layout_width="@dimen/deals_details_like_img_width_height"
+                        android:layout_height="@dimen/deals_details_like_img_width_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/deals_detail_deals"/>
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 days"
+                        android:textColor="@color/white"
+                        android:id="@+id/daystxt"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="@dimen/deals_details_margin_top"
+                        android:textSize="@dimen/deals_details_like_textsize"/>
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DealsEnds"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:id="@+id/dealsend"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/deals_details_like_textsize"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/deals_details_deals_height"
+                    android:layout_weight=".20"
+                    android:id="@+id/like_btn_layout"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/likeimg"
+                        android:layout_width="@dimen/deals_details_like_img_width_height"
+                        android:layout_height="@dimen/deals_details_like_img_width_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/liked_unactive"/>
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="@dimen/deals_details_margin_top"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/like" />
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Likes"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/like_txt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/deals_details_deals_height"
+                    android:layout_weight=".20"
+                    android:gravity="bottom"
+                    android:id="@+id/rating_btn"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/viewimg"
+                        android:layout_width="25dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/deals_detail_view"/>
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="567"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/deals_details_margin_top"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/view" />
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Viewed"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/viewtxt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/deals_details_deals_height"
+                    android:layout_weight=".20"
+                    android:id="@+id/reviewlayout"
+                    android:gravity="bottom"
+
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/iv_outlet_like"
+                        android:layout_width="@dimen/deals_details_like_img_width_height"
+                        android:layout_height="@dimen/deals_details_like_img_width_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/deals_detail_reviews"/>
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="567"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="@dimen/deals_details_margin_top"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/review" />
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Reviews"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/reviewtxt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/deals_details_deals_height"
+                    android:layout_weight=".20"
+                    android:gravity="bottom"
+                    android:id="@+id/reviews"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/iv_outlet_review"
+                        android:layout_width="@dimen/deals_details_like_img_width_height"
+                        android:layout_height="@dimen/deals_details_like_img_width_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/deals_detail_share"/>
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="567"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/deals_details_margin_top"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/share" />
+                    <utils.RegularText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Share"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/deals_details_like_textsize"
+                        android:id="@+id/sharetxt" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/Details"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="13sp"
+        android:id="@+id/description"
+        android:text="Loreams ipsum dolor sit Upon release, the film was the highest-grossing film in its opening weekend in India and had the highest opening day collections for an Indian film up until that point. It also held the record for the highest net collections in the first week for a Bollywood film. It also became one of the few Indian films to become successful in East Asian markets such as China,[4] eventually bringing its overseas total to more than US$65 million at "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:text="@string/Locations"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/webview"
+        android:scaleType="fitXY"
+        android:background="@drawable/mapimg"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/Reviews"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <!--<utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"/>-->
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/writetxt_border"
+                android:layout_alignParentRight="true"
+                android:textSize="11sp"
+                android:textColor="#737373"
+                android:drawableEnd="@drawable/edit"
+                android:drawablePadding="5dp"
+                android:id="@+id/writereview"
+                android:drawableRight="@drawable/srch"
+                android:text="@string/WriteReviews"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+   <!-- <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewlist"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reviewlist"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"/>
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/toolbar_color"
+                android:textColor="@color/white"
+                android:text="@string/VIEWALL"
+                android:paddingLeft="10dp"
+                android:id="@+id/viewall"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

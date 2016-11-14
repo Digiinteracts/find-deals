@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <utils.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageview"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/profile_pic"/>
+
+    <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_toRightOf="@+id/imageview"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true"
+        android:text="Rustom Oslo"/>
+
+    <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/title"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:text="Loreams ipsum dolor sit Upon release, the film was the highes"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/likeicn"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/liked_unactive"
+        android:layout_alignParentBottom="true"/>
+
+    <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeleft"
+        android:text="3 hours ago"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/likeicn"/>
+</RelativeLayout>

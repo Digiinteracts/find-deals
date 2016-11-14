@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="#B2000000"
+    android:layout_height="match_parent">
+
+     <utils.floatingActionMenu.FloatingActionsMenu
+           android:id="@+id/addButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginLeft="0dp"
+           android:layout_marginStart="0dp"
+           fab:fab_labelStyle="@style/menu_labels_style"
+           fab:fab_addButtonColorNormal="#00000000"
+           fab:fab_addButtonColorPressed="@color/white_pressed"
+           fab:fab_addButtonPlusIconColor="#aaaaaa"
+           fab:fab_labelsPosition="left"
+           >
+
+           <utils.floatingActionMenu.FloatingActionButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               fab:fab_colorNormal="#00000000"
+               fab:fab_title="@string/FavoriteCategories"
+               android:id="@+id/favoritecategories"
+               fab:fab_icon="@drawable/favourites"
+               fab:fab_colorPressed="@color/white_pressed"/>
+
+           <utils.floatingActionMenu.FloatingActionButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               fab:fab_colorNormal="#00000000"
+               fab:fab_title="@string/myprofile"
+               fab:fab_icon="@drawable/myprofile"
+               android:id="@+id/myprofile"
+               fab:fab_colorPressed="@color/white_pressed"/>
+
+         <utils.floatingActionMenu.FloatingActionButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               fab:fab_colorNormal="#00000000"
+               fab:fab_icon="@drawable/followers"
+               fab:fab_title="@string/FavoriteStores"
+               android:id="@+id/favoritestores"
+               fab:fab_colorPressed="@color/white_pressed"/>
+
+       </utils.floatingActionMenu.FloatingActionsMenu>>
+
+</RelativeLayout>

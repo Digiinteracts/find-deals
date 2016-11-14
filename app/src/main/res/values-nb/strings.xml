@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">FinalDeal</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="facebook_app_id">1827794414170980</string>
+
+    <string name="DealsNearby">Tilbud i nærheten</string>
+
+    <string name="Username">Brukernavn</string>
+    <string name="Password">Passord</string>
+    <string name="Login">Logg inn</string>
+    <string name="ForgotPassword">Glemt passord?</string>
+    <string name="LoginwithFacebook">Logg inn med Facebook</string>
+    <string name="Loginwithgoogle">Logg inn med Google+</string>
+    <string name="OR">Eller</string>
+    <string name="SignUp">Registrerdeg</string>
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Avbryt</string>
+
+    <string name="user"> Brukernavn</string>
+    <string name="shopowner"> Butikkeier</string>
+    <string name="firstname">Fornavn</string>
+    <string name="lastname">Etternavn</string>
+    <string name="phone">Telefon</string>
+    <string name="email">E-post</string>
+    <string name="YourLocation">Nåværende sted</string>
+    <string name="Deals">Tilbud</string>
+    <string name="PopularDeals">Populære tilbud</string>
+    <string name="PopulatStores">Populære butikker</string>
+    <string name="CompanyName">selskapsnavn</string>
+    <string name="ZipCode">Post kode</string>
+    <string name="City">By</string>
+    <string name="CompanyDistrict">Land District</string>
+    <string name="ORGNumber">ORG nummer</string>
+
+    <string name="nearby">nærheten</string>
+    <string name="Home">Hjem</string>
+    <string name="Discover">Utforsk</string>
+    <string name="Categories">Kategorier</string>
+    <string name="More">Mer</string>
+
+    <string name="FavoriteStores">favoritt Butikker</string>
+    <string name="myprofile">min profil</string>
+    <string name="FavoriteCategories">favoritt kategorier</string>
+
+    <string name="back">tilbake</string>
+    <string name="DealsEnds">tilbud Slutter</string>
+    <string name="Likes">Likes</string>
+    <string name="Viewed">Vist</string>
+    <string name="Reviews">anmeldelser</string>
+    <string name="Details">detaljer</string>
+    <string name="Locations">steder</string>
+    <string name="WriteReviews">Skriv Anmeldelser</string>
+    <string name="Call">Anrop</string>
+    <string name="Follow">Følg</string>
+    <string name="FolloWers">følgere</string>
+    <string name="KMAway">Km Borte</string>
+    <string name="ADDRESS">ADRESSE</string>
+    <string name="StoreTime">butikk Tid</string>
+    <string name="ActiveDeals">aktive tilbud</string>
+    <string name="EditProfile">Redigere profil</string>
+    <string name="DealsLiked">-tilbud Likte</string>
+    <string name="StoresFollowed">butikker Fulgt</string>
+    <string name="FavouriteCategories">Favoritt kategorier</string>
+    <string name="WRITEREVIEWS">å skrive anmeldelser</string>
+
+    <string name="Ratings">Evalueringer</string>
+    <string name="Submit">Sende inn</string>
+    <string name="Save">Lagre</string>
+    <string name="Gallery">Galleri</string>
+    <string name="VIEWALL">SE ALT</string>
+
+    <string name="Register">Registrere</string>
+    <string name="guest">Gjest</string>
+    <string name="categories">Kategorier</string>
+    <string name="spinner_title">Select</string>
+    <string name="Language">Språk</string>
+    <string name="RateFindDealsonAppStore">Rate se tilbud på App Store</string>
+    <string name="AboutFindDeals">Om Finn tilbud</string>
+    <string name="ManageNotification">Administrer Melding</string>
+    <string name="Share">Dele</string>
+    <string name="InviteFriends">Invitere venner</string>
+    <string name="FollowUs">Følg oss</string>
+    <string name="GiveUsFeedback">Gi oss tilbakemelding</string>
+    <string name="FAQ">FAQ</string>
+    <string name="Logout">Logg ut</string>
+    <string name="Settings">innstillinger</string>
+    <string name="reviewlist">gjennomgang liste</string>
+    <string name="DealsList">Tilbud i List</string>
+    <string name="stores">butikker</string>
+</resources>

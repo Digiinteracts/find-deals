@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/dis_inner_bg"
+        android:padding="10dp"
+        android:id="@+id/mainlayoutbg"
+        android:layout_height="140dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/persentage"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/like"/>
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/like_txt"
+                android:textSize="13sp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/rate"
+                android:textColor="@color/white"
+                android:text="4 k likes"/>
+
+        </LinearLayout>
+    <!--<utils.Boldtext
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:padding="3dp"
+        android:id="@+id/rate"
+        android:text="4.7"/>
+
+ <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/vote"
+        android:textSize="13sp"
+        android:layout_below="@+id/rate"
+        android:textColor="@color/white"
+        android:text="3 Votes"/>
+-->
+
+        <utils.Boldtext
+            android:id="@+id/store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="B'gosh Outlet Store"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+       <!-- <utils.RegularText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/osld"
+        android:layout_alignParentBottom="true"
+        android:text="OSLD Norway"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>-->
+
+        <utils.Boldtext
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/persentage"
+        android:layout_alignParentBottom="true"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+        android:text="70%"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchasetxt"
+                android:textSize="14sp"
+                android:text="$ 10 Off Purchase of $50 or More at Oshkosh.."/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/purchasetxt"
+                android:id="@+id/img"
+                android:background="@drawable/map"/>
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distance"
+                android:textSize="12sp"
+                android:layout_below="@+id/purchasetxt"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/img"
+                android:text="$ 100 meter away"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/purchasetxt"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/img"
+                android:text="$ 477"/>
+
+
+            <utils.Boldtext
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewtxt"
+                android:textColor="#246FC0"
+                android:layout_below="@+id/purchasetxt"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img"
+                android:text="$ 599"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

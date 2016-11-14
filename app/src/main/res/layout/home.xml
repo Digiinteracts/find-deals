@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true">
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/yourlocation"
+                android:textSize="9sp"
+                android:textColor="@color/white"
+                android:text="@string/YourLocation"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <utils.RegularText
+                    android:drawablePadding="5dp"
+                    android:id="@+id/txtaddress"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@drawable/d_arrow"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="10sp"
+                    android:text="OSLD,Norway"/>
+                <!-- <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scaleType="centerCrop"
+                     android:background="@drawable/down_arrow"
+                     android:layout_marginLeft="@dimen/Default_margin_plus"
+                     android:layout_gravity="center"
+                     android:id="@+id/imageView4" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/srch"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/near_by_layout"
+            android:paddingTop="10dp"
+            android:background="@color/white"
+            android:paddingBottom="9dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:background="@drawable/discoverimg"/>
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/home_nearyby_txt_color"
+                android:text="@string/Discover"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:id="@+id/storeList"
+            android:paddingBottom="11dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/storeicn"/>
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/home_nearyby_txt_color"
+                android:text="@string/stores"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginLeft="1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/categorylayout"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/category"/>
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/home_nearyby_txt_color"
+                android:layout_marginTop="3dp"
+                android:text="@string/categories"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollview">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--<utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:text="Popular Deals"/>
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:numColumns="2"
+                android:gravity="center"
+                android:columnWidth="50dp"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:stretchMode="columnWidth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <utils.RegularText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Popular Stores"/>-->
+
+            <!--<com.twotoasters.jazzylistview.JazzyListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="2dp"
+                app:effect="wave"
+                app:only_animate_new_items="false"
+                app:only_animate_fling="false"
+                app:max_velocity="0"
+                android:id="@+id/store_listview"/>-->
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview"/>
+
+        </LinearLayout>
+ <!--   </ScrollView>-->
+</LinearLayout>

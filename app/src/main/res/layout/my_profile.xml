@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/profilepiclayout"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <utils.CircleImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/profilepic"
+            android:src="@drawable/profile_pic"/>
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jitender"
+            android:id="@+id/name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Norway OSLO"
+            android:textColor="#989898"
+            android:id="@+id/description"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/likelayout"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="@color/lightred"
+                    android:id="@+id/like"
+                    android:textSize="20sp"/>
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#989898"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Likes" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/followinglayout"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="@color/lightred"
+                    android:id="@+id/following"
+                    android:textSize="20sp"/>
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#989898"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FolloWers" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/lightred"
+                    android:id="@+id/reviews"
+                    android:textSize="20sp"/>
+
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#989898"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Reviews" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        </LinearLayout>
+
+        <utils.RegularText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/EditProfile"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/editprofile"
+            android:layout_marginTop="5dp"
+            android:background="#CCCCCC"/>
+
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/store_deals_toolbarheight"
+        android:paddingBottom="1dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dealsdetaisimg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/store_deals_toolbarheight"
+                android:id="@+id/call_btn_layout"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_outlet_call"
+                    android:layout_width="@dimen/deals_details_like_img_width_height"
+                    android:layout_height="@dimen/deals_details_like_img_width_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/home"/>
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 days"
+                    android:textColor="@color/white"
+                    android:id="@+id/daystxt"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="@dimen/deals_details_margin_top"
+                    android:textSize="@dimen/deals_details_like_textsize"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/store_deals_toolbarheight"
+                android:id="@+id/map_btn_layout"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_outlet_compass"
+                    android:layout_width="@dimen/deals_details_like_img_width_height"
+                    android:layout_height="@dimen/deals_details_like_img_width_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/categories"/>
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/deals_details_margin_top"
+                    android:textSize="@dimen/deals_details_like_textsize"
+                    android:id="@+id/like" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/store_deals_toolbarheight"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/rating_btn"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/viewimg"
+                    android:layout_width="@dimen/deals_details_like_img_width_height"
+                    android:layout_height="@dimen/deals_details_like_img_width_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/categories"/>
+                <utils.RegularText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="567"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/deals_details_margin_top"
+                    android:textSize="@dimen/deals_details_like_textsize"
+                    android:id="@+id/view" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+        </RelativeLayout>
+</LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profilepiclayout"
+        android:id="@+id/manageaccount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/ll_like"
+                android:background="@drawable/p1">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/like_2" />
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="1333"/>
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="@string/DealsLiked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/p2"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/ll_stores_followed"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/followers" />
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="8"/>
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="@string/StoresFollowed"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/p3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/ll_reviews"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/deals_detail_reviews" />
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="50"/>
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="@string/Reviews"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/p4"
+                android:orientation="vertical"
+                android:id="@+id/ll_fav_category"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/favourites" />
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="5"/>
+
+                <utils.Boldtext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="@string/FavoriteCategories"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

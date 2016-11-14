@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/categorytitle"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/nearby"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/srch"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/toplayout"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_icon"
+            android:id="@+id/mapview"/>
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/mapviewtxt"
+            android:layout_toRightOf="@+id/mapview"
+            android:text="Map View"/>
+
+        <utils.RegularText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/mapviewtxt"
+            android:layout_toLeftOf="@+id/felter"
+            android:layout_marginLeft="10dp"
+            android:text="Showing 233 deals arounds OSld"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/filter"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp"
+            android:id="@+id/felter"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Discover"
+        android:textSize="50dp"
+        android:id="@+id/map"
+        android:background="@drawable/mapimg1"
+        android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listviewlayout">
+      <!-- <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:id="@+id/listview"/>-->
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
